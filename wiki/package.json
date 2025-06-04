@@ -7,11 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "watch-sync": "node app/_scripts/syncManifest.js",
     "copy-out": "mv out/_next out/next && sed -i '' -e 's/\\/_next/\\.\\/next/g' out/**.html && mv out/index.html ./extension && rsync -va --delete-after out/next/ ./extension/next/ && rm -rf out",
     "copy-public": "cp public/images/* extension/images",
     "export": "next build && npm run copy-out && npm run copy-public"
   },
   "dependencies": {
+    "chokidar": "^4.0.3",
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
