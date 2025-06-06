@@ -1,16 +1,22 @@
-extension.zip
-
+# OS
 .DS_Store
 
-node_modules
-package-lock.json
-
+# Build artifacts
+extension.zip
+.next/
 *.log
 *.tmp
 
-.next/
+# Node
+node_modules
+package-lock.json
 
+# Editor settings
 .vscode/
 .idea/
 
+# Config/Env files
+next-env.d.ts
+next.config.ts
+postcss.config.mjs
 
