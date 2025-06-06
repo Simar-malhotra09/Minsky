@@ -10,13 +10,13 @@
   
   "commands": {
 
-
     "search-wikipedia": {
       "suggested_key": {
         "default": "Ctrl+Shift+9",
         "mac": "Command+Shift+9"
       },
-      "description": "Wikipediaa"
+      "url":"https://en.wikipedia.org/wiki/Special:Search?search=",
+      "description": "Wikipedia"
     },
     
 
@@ -25,6 +25,7 @@
         "default": "Ctrl+Shift+8",
         "mac": "Command+Shift+8"
       },
+      "url":"https://jisho.org/search/",
       "description": "Jisho.org"
     }
   },
