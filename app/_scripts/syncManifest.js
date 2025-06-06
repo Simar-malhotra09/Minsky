@@ -2,8 +2,8 @@ const chokidar = require('chokidar');
 const fs = require('fs');
 const path = require('path');
 
-const source = path.resolve(__dirname, '../../public/manifest.json');
-const target = path.resolve(__dirname, '../../extension/manifest.json');
+const target = path.resolve(__dirname, '../../public/manifest.json');
+const source = path.resolve(__dirname, '../../extension/manifest.json');
 
 fs.copyFileSync(source, target);
 console.log('✅ Initial manifest.json synced. Watching for changes...');
