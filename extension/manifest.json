@@ -15,19 +15,26 @@
         "default": "Ctrl+Shift+9",
         "mac": "Command+Shift+9"
       },
-      "url":"https://en.wikipedia.org/wiki/Special:Search?search=",
       "description": "Wikipedia"
+    },
+    
+    "search-psu-lib": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+8",
+        "mac": "Command+Shift+8"
+      },
+      "description": "Penn State's Library Catalog"
     },
     
 
     "search-jisho": {
       "suggested_key": {
-        "default": "Ctrl+Shift+8",
-        "mac": "Command+Shift+8"
+        "default": "Ctrl+Shift+7",
+        "mac": "Command+Shift+7"
       },
-      "url":"https://jisho.org/search/",
       "description": "Jisho.org"
     }
+
   },
 
   "action": {
