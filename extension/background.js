@@ -1,7 +1,7 @@
 const commandToUrl = {
   "search-wikipedia": "https://en.wikipedia.org/wiki/Special:Search?search=",
   "search-jisho": "https://jisho.org/search/",
-  "search-psu-lib":"https://libraries.psu.edu/search/all/"
+  "search-psu-lib": "https://libraries.psu.edu/search/all/"
 };
 
 chrome.commands.onCommand.addListener((command) => {
