@@ -1,2 +1,2 @@
-Landing page for reference:
-<img src="minsky.png" width="400"/>  
+## 📌 Landing page for reference:
+<img src="minsky.png" width="800"/>  
