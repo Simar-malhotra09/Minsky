@@ -3,7 +3,10 @@
   "name": "Site Specific Search Shortcut",
   "version": "1.0",
   "description": "Search selected text on target site with a preset hotkey.",
-  "permissions": ["scripting", "activeTab"],
+  "permissions": ["scripting", "activeTab","contextMenus", "notifications"],
+ "host_permissions": [
+  "<all_urls>"
+ ],
   "background": {
     "service_worker": "background.js"
   },
