@@ -28,13 +28,20 @@
       },
       "description": "Penn State's Library Catalog"
     },
-
     "search-jisho": {
       "suggested_key": {
         "default": "Ctrl+Shift+7",
         "mac": "Command+Shift+7"
       },
       "description": "Jisho.org"
+    },
+
+    "search-mdbg": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+6",
+        "mac": "Command+Shift+6"
+      },
+      "description": "mdbg.net- Chinese Dictionary"
     }
   },
 
