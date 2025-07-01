@@ -3,14 +3,13 @@
   "name": "Site Specific Search Shortcut",
   "version": "1.0",
   "description": "Search selected text on target site with a preset hotkey.",
-  "permissions": ["scripting", "activeTab","contextMenus", "notifications"],
+  "permissions": ["scripting", "activeTab","contextMenus", "notifications", "storage", "commands"],
  "host_permissions": [
   "<all_urls>"
  ],
   "background": {
     "service_worker": "background.js"
   },
-  
   "commands": {
 
     "search-wikipedia": {
@@ -46,6 +45,7 @@
   },
 
   "action": {
-    "default_title": "Site Specific Search"
+    "default_title": "Site Specific Search",
+    "default_popup": "popup.html"  
   }
 }

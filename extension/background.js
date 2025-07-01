@@ -5,6 +5,27 @@ const commandToUrl = {
   "search-mdbg": "https://www.mdbg.net/chinese/dictionary?wdqb="
 };
 
+const commandToUrlToActionType = {
+  "search-wikipedia": "wikipedia",
+  "search-jisho": "japanese-jisho",
+  "search-psu-lib": "book",
+  "search-mdbg": "chinese-mdbg"
+};
+
+function saveToStorage(command, selectedText) {
+  const actionType = commandToUrlToActionType[command] || 'unknown';
+  const url = commandToUrl[command] + encodeURIComponent(selectedText);
+  const timestamp = new Date().toISOString();
+
+  const logEntry = { timestamp, selectedText, actionType, url };
+
+  chrome.storage.local.get({ logs: [] }, (data) => {
+    const logs = data.logs;
+    logs.push(logEntry);
+    chrome.storage.local.set({ logs });
+  });
+}
+
 chrome.commands.onCommand.addListener((command) => {
   if (!(command in commandToUrl)) return;
 
@@ -19,6 +40,8 @@ chrome.commands.onCommand.addListener((command) => {
         if (selectedText) {
           const url = commandToUrl[command] + encodeURIComponent(selectedText);
           chrome.tabs.create({ url });
+
+          saveToStorage(command, selectedText);
         }
       }
     );
