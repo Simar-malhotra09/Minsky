@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8"> <!-- ✅ Fixes weird characters -->
   <title>Search Logger</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 12px;
+      width: 320px;
+    }
+    h3 {
+      margin-bottom: 8px;
+    }
+    ul {
+      padding-left: 16px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    button {
+      margin-top: 12px;
+      padding: 6px 12px;
+      background-color: #3b82f6;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+  </style>
 </head>
 <body>
+  <h3>View Hotkeys</h3>
+  <ul id="hotkey-list"></ul>
+
   <button id="download">Download Logs as CSV</button>
+
   <script src="popup.js"></script>
 </body>
 </html>
-

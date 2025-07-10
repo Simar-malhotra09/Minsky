@@ -7,6 +7,12 @@
  "host_permissions": [
   "<all_urls>"
  ],
+ "web_accessible_resources": [
+  {
+    "resources": ["hotkeys_config.json"],
+    "matches": ["<all_urls>"]
+  }
+  ],
   "background": {
     "service_worker": "background.js"
   },

@@ -29,3 +29,26 @@ document.getElementById('download').addEventListener('click', () => {
   });
 });
 
+fetch(chrome.runtime.getURL("hotkeys_config.json"))
+  .then(res => res.json())
+  .then(hotkeys => {
+    const table = document.createElement("table");
+    
+    // header row
+
+    const header = document.createElement("tr");
+    header.innerHTML = "<th>Description</th><th>Mac Key</th>";
+    table.appendChild(header);
+
+    // Add rows for each hotkey (fields 1 and 3)
+    hotkeys.forEach(hk => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${hk.desc}</td>
+        <td>${hk.suggestedKeyMac || ""}</td>
+      `;
+      table.appendChild(row);
+    });
+
+    document.body.appendChild(table);
+  });
