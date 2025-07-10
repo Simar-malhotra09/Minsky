@@ -1,0 +1,22 @@
+[
+  {
+    "desc": "Wikipedia",
+    "suggestedKey": "Ctrl+Shift+9",
+    "suggestedKeyMac": "Command+Shift+9"
+  },
+  {
+    "desc": "Penn State's Library Catalog",
+    "suggestedKey": "Ctrl+Shift+8",
+    "suggestedKeyMac": "Command+Shift+8"
+  },
+  {
+    "desc": "Jisho.org",
+    "suggestedKey": "Ctrl+Shift+7",
+    "suggestedKeyMac": "Command+Shift+7"
+  },
+  {
+    "desc": "mdbg.net- Chinese Dictionary",
+    "suggestedKey": "Ctrl+Shift+6",
+    "suggestedKeyMac": "Command+Shift+6"
+  }
+]
